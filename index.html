@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Billing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hotel Billing System</h1>
+    
+    <h2>Available Rooms</h2>
+    <ul id="room-list"></ul>
+
+    <h2>Make a Reservation</h2>
+    <input type="text" id="guest-name" placeholder="Guest Name">
+    <select id="room-select"></select>
+    <input type="date" id="check-in">
+    <input type="date" id="check-out">
+    <button onclick="makeReservation()">Reserve Room</button>
+
+    <h2>Generate Bill</h2>
+    <input type="number" id="reservation-id" placeholder="Reservation ID">
+    <input type="number" id="total-amount" placeholder="Total Amount">
+    <button onclick="generateBill()">Generate Bill</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
